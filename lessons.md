@@ -52,3 +52,9 @@
   Set A = B, that is we henceforth use B as the array supporting the list. (A's storage capacity will increase to B's capacity)
   Insert the new element in the new array. (Because it can now take more elements.)
   NB: The rule is to create the new array B to have twice the size of the old array A.
+
+### Amortization
+
+- Amortized analysis analyze the cost (time) per operation
+- ### Amortized analysis for dynamic array
+  - Amortized Cost = (n + 2n) / n
