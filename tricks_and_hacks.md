@@ -8,3 +8,10 @@ print('\n'.join(map(str,list(output))))
 ## defaultdict from the collections module
 
 Automatically add a key to the dictionary for you if the key is not already inside the dictionary. Helps avoid keyErrors
+
+## Strings to array
+
+```
+s = 'This is an example sentence'
+s.split()
+```
