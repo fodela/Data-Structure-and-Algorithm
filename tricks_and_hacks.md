@@ -15,3 +15,10 @@ Automatically add a key to the dictionary for you if the key is not already insi
 s = 'This is an example sentence'
 s.split()
 ```
+
+## Array or list to string
+
+```
+l = ['my', 'example', 'sentence']
+' '.join(l)
+```
