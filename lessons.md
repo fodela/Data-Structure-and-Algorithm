@@ -58,3 +58,14 @@
   - Amortized analysis analyze the cost (time) per operation
   - ### Amortized analysis for dynamic array
     - Amortized Cost = (n + 2n) / n
+
+## Stacks Queues and Deques
+
+### Stacks
+
+A stack is an ordered collection of items where the addition of new items and the removal of existing items always takes place at the same end.
+This end is commonly referred to as the top.
+The end opposite to the top is the base.
+It uses the last-in first-out principle => the most recently added is the first to be removed.
+Push adds a new item while pop removes an item
+E.g web browser history navigation using the back and forward buttons.
