@@ -76,3 +76,14 @@ It has the ff methods:
 3. peek()
 4. isEmpty()
 5. size()
+
+### Queue
+
+Is an ordered collection of items where the addition of new items happens at one end, called the 'rear' and the removal of existing items occurs at the other end, commonly called the front.
+This follows the "first-in first-out (FIFO)' principle aka first come first served
+It has the ff methods:
+
+1. enqueue(item)
+2. dequeue()
+3. isEmpty()
+4. size()
