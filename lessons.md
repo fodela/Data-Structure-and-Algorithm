@@ -87,3 +87,18 @@ It has the ff methods:
 2. dequeue()
 3. isEmpty()
 4. size()
+
+### Deque
+
+Aka double ended queue, is an ordered collection of items similar to the queue.
+It has two ends, a front and a rear, and the items remain positioned in the collection.
+Items can be added or moved from both front and rear.
+Is a hybrid of principles used by stack and queue but it does not require LIFO nor FIFO orderings that are enforced by stack and queues. Is completely up to you to make consistent use of the addition and removal operations.
+It has the following method:
+
+1. isEmpty()
+2. size()
+3. addFront(item)
+4. addRear(item)
+5. addRear(item)
+6. removeRear(item)
