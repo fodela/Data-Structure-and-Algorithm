@@ -61,6 +61,13 @@
 
 ## Stacks Queues and Deques
 
+All three uses array or list and its methods.
+NB: For me, the front or first of the list is the index len(array) - 1, while the rear, back or last of the list is at index 0
+Still just my thoughts:
+
+- Prepend - add things to rear. We implemented it here using " .insert(0,item) "
+- Append - add items to the front.
+
 ### Stacks
 
 A stack is an ordered collection of items where the addition of new items and the removal of existing items always takes place at the same end.
@@ -98,7 +105,7 @@ It has the following method:
 
 1. isEmpty()
 2. size()
-3. addFront(item)
-4. addRear(item)
-5. addRear(item)
-6. removeRear(item)
+3. addFront(item) ==> prepend
+4. addRear(item) ==> append
+5. removeFront()
+6. removeRear()
