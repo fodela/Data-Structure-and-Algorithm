@@ -109,3 +109,12 @@ It has the following method:
 4. addRear(item) ==> append
 5. removeFront()
 6. removeRear()
+
+## Linked lists
+
+### Singly Linked list
+
+A singly linked list is a collection of nodes that collectively form a linear sequence.
+Each node stores a reference to an object that is an element of the sequence, as well as a reference to the next node of the list.
+The list instance maintains a member name head that identifies the first node of the list
+In some applications another member named tail that identifies the last node of the list
