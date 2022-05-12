@@ -124,3 +124,17 @@ In some applications another member named tail that identifies the last node of 
 - Traversing => going through the nodes and checking the linked list. Also known as link hopping or pointer hopping.
 
 Each node is represented as a unique object, with that instance storing a reference to its element and reference to the next node (or None)
+
+### Inserting an element at the head of singly linked list
+
+An important property of a linked list is that it does not have a predetermined fixed size.
+It uses space proportionally to its current number of elements
+
+#### NB: check implementation files for how it is done
+
+Procedure to insert a new element at the head of the list:
+
+1. Create a new node
+2. Set its element to the new element
+3. Set its next link to refer to the current head
+4. Then set the list's head to point to the new node.
