@@ -118,3 +118,9 @@ A singly linked list is a collection of nodes that collectively form a linear se
 Each node stores a reference to an object that is an element of the sequence, as well as a reference to the next node of the list.
 The list instance maintains a member name head that identifies the first node of the list
 In some applications another member named tail that identifies the last node of the list
+
+- Head => first node of the list. Nothing points to the head.
+- Tail => last node and points to nothing. Identified as the node with 'None' as its reference.
+- Traversing => going through the nodes and checking the linked list. Also known as link hopping or pointer hopping.
+
+Each node is represented as a unique object, with that instance storing a reference to its element and reference to the next node (or None)
