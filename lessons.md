@@ -145,3 +145,7 @@ Procedure to insert a new element at the head of the list:
 2. Assign its next reference to None
 3. Set the next reference of the tail to point to this new node
 4. Then update the tail reference itself to this new node
+
+### Removing an element from the head of a singly linked list
+
+- Point the head to the second node and remove it.
