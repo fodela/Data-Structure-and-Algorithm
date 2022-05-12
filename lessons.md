@@ -138,3 +138,10 @@ Procedure to insert a new element at the head of the list:
 2. Set its element to the new element
 3. Set its next link to refer to the current head
 4. Then set the list's head to point to the new node.
+
+### Inserting an element at the tail of a singly linked list
+
+1. Create a new node
+2. Assign its next reference to None
+3. Set the next reference of the tail to point to this new node
+4. Then update the tail reference itself to this new node
