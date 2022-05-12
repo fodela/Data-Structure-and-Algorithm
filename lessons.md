@@ -149,3 +149,10 @@ Procedure to insert a new element at the head of the list:
 ### Removing an element from the head of a singly linked list
 
 - Point the head to the second node and remove it.
+
+### Removing an element from a singly linked list
+
+- We cannot easily delete the last node of a singly linked list
+- Even if we maintain a tail reference directly to the last node of the list, we must be able to access the node before the last node in order to remove the last node.
+- But we cannot reach the node before the tail by following next links from tail
+- If we want to support such an operation efficiently, we will need to make our list doubly linked
