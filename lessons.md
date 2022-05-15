@@ -18,7 +18,7 @@
         -We use single name for the group of related data and index number them to refer to specific element in the group.
       - An array is a group of related variable that can be stored one after another in a contiguous portion of the computer's memory.
 
-      - Python internally represents each unicode character with 16bits (i.e 2 bytes) => 6 xter (letter) string will be stored in 12 bytes of memory
+      - Python internally represents each unicode character with 16bits (i.e 2 bytes) => 6 character (letter) string will be stored in 12 bytes of memory
       - Each location within an array is called a cell. This location is described using an integer index
       - Each cell must have the same number of byte enabling any cell to be accessed randomly in constant time.
       - Memory address of any data can be calculated using the formula: start + (cell size)(index)
