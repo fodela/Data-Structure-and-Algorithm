@@ -156,3 +156,8 @@ Procedure to insert a new element at the head of the list:
 - Even if we maintain a tail reference directly to the last node of the list, we must be able to access the node before the last node in order to remove the last node.
 - But we cannot reach the node before the tail by following next links from tail
 - If we want to support such an operation efficiently, we will need to make our list doubly linked
+
+### Doubly Linked List
+
+Each node keeps a track of the node before it using previous (prev) and the node after it using next.
+This allow
