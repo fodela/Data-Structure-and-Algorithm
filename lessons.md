@@ -180,4 +180,10 @@ We change the next pointer and prev pointer to accommodate the new node.
 1. Header next points to the new node.
 2. Previous front node prev points to the new node
 3. New node's prev points to header and
-4. New node's next points to the prev front node
+4. New node's next points to the previous front node
+
+### Deleting a node
+
+The two neighbors of the node to be deleted are linked directly to each other
+As a result, that node will no longer be considered part of the list and it can be reclaimed by the system.
+Because of sentinels, the same implementation can be used when deleting the first or the last element of a sequence.
