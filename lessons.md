@@ -159,5 +159,12 @@ Procedure to insert a new element at the head of the list:
 
 ### Doubly Linked List
 
-Each node keeps a track of the node before it using previous (prev) and the node after it using next.
-This allow
+We define a linked list in which each node keeps an explicit reference to the node before it and a reference to the node after it.
+These lists allow a greater variety of O(1) time update operations, including insertions and deletions.
+
+We continue to use the term "next" for the reference to the node that follows another.
+
+We use the term "prev" for the reference to the node that precedes it.
+
+We add special nodes at both ends (header and trailer nodes).
+These "dummy" nodes are knowns as sentinels or guards
