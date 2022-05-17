@@ -174,3 +174,10 @@ These "dummy" nodes are knowns as sentinels or guards
 Every insertion into our doubly linked list representation will take place between a pair of existing nodes.
 When a new element is inserted at the front of the sequence, we will simply add the new node between the header and the node that is currently after the header.
 We change the next pointer and prev pointer to accommodate the new node.
+
+### Inserting a node to Front
+
+1. Header next points to the new node.
+2. Previous front node prev points to the new node
+3. New node's prev points to header and
+4. New node's next points to the prev front node
