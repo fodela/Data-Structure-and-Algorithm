@@ -187,3 +187,11 @@ We change the next pointer and prev pointer to accommodate the new node.
 The two neighbors of the node to be deleted are linked directly to each other
 As a result, that node will no longer be considered part of the list and it can be reclaimed by the system.
 Because of sentinels, the same implementation can be used when deleting the first or the last element of a sequence.
+
+## Recursion
+
+What is recursion?
+
+- Two main instances of recursion
+  1. Is a technique in which a function makes one or more calls to itself. More common and our major focus for now.
+  2. When a data structure uses smaller instances of the exact same type of data structure when it represent itself.
