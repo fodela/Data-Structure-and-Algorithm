@@ -190,8 +190,14 @@ Because of sentinels, the same implementation can be used when deleting the firs
 
 ## Recursion
 
-What is recursion?
+#### What is recursion?
 
 - Two main instances of recursion
   1. Is a technique in which a function makes one or more calls to itself. More common and our major focus for now.
   2. When a data structure uses smaller instances of the exact same type of data structure when it represent itself.
+
+#### Why use recursion?
+
+- It provides a powerful alternative for performing repetitions os tasks in which a loop is not ideal.
+- Most modern programming languages support recursion
+- Recursion servers as a great tool for building out particular data structures
