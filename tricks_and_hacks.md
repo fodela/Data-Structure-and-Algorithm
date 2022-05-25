@@ -22,3 +22,13 @@ s.split()
 l = ['my', 'example', 'sentence']
 ' '.join(l)
 ```
+
+## startswith()
+
+This method check if a string start with a particular string
+
+```
+sentence = 'Hi I am Fodela'
+sentence.startswith('Hi')
+#returns True
+```
