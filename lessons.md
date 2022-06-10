@@ -233,3 +233,65 @@ Examples
 
 1. file system, directory or folders
 2. Webpage
+
+#### Vocabularies
+
+- **Node**
+
+  - Is a fundamental part of a tree. It can have a name, which we call a "key".
+  - May also have additional information called "payload"
+    While the payload information is not central to many tree algorithms, it is often critical in applications that make use of trees.
+
+- **Edge**
+
+  - Another fundamental part of a tree.
+  - It connects two nodes to show that there is a relationship between them
+  - Every node (except the root) is connected by exactly one incoming edge from another node.
+  - Each node may have several outgoing edges.
+
+- **Path**
+
+  - Is an ordered list of nodes that are connected by edges.
+  - e.g Carnivora -> Felidae -> Felis ,is a path
+
+- ** Children**
+
+  - The set of nodes 'c' that have incoming edges from the same node are said to be the children of that node.
+
+- **Parent**
+
+  - A node is the parent of all the nodes it connects to with outgoing edges.
+
+- **Sibling**
+
+  - Children of the same parent
+
+- **SubTree**
+
+  - A set of nodes and edges comprised of a parent and all the descendants of that parent.
+
+- **Leaf Node**
+
+  - A node that has no children.
+
+- **Level**
+
+  - The number of edges on the path from the root node to n
+
+- **Height**
+
+  - The of a tree is equal to the maximum level of any node in the tree.
+
+**Full Definition of a tree**
+
+- A tree consists of a set of nodes and a set of edges that connect pairs of nodes. A tree has the ff properties:
+  - One node of the tree is designated as the root node.
+  - Every node n, except the root node, is connected by an edge from exactly one other node p, where p is the parent of n.
+  - A unique path traverses from the root to each node.
+  - If each node has a maximum of two children we call that tree a **binary tree**
+
+**Recursive definition of a tree**
+
+- A tree is either empty or consists of a root and zero or more subtrees, each of which is also a tree
+
+- The root of each subtree is connected to the root of the parent tree by an edge.
