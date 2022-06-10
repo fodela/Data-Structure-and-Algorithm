@@ -217,3 +217,19 @@ Because of sentinels, the same implementation can be used when deleting the firs
 #### Memoization
 
 Memoization effectively refers to remembering ('memoization' -> 'memorandum' -> to be remembered) results of method calls based on the method inputs and then returning the remembered result rather than computing the result again. You can think of it as a cache for method results. We'll use this in some of the interview problems as improved versions of a purely recursive solution.
+
+## Trees
+
+#### Properties
+
+1. A tree data structure like a real tree has root, branches and leaves
+   The difference is that in CS a tree data structure has its root at the top and its leaves at the bottom. Think of it as an inverted tree
+
+2. All of the children of one node are independent of the children of another node
+
+3. Each leaf node is unique
+
+Examples
+
+1. file system, directory or folders
+2. Webpage
