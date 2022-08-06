@@ -295,3 +295,13 @@ Examples
 - A tree is either empty or consists of a root and zero or more subtrees, each of which is also a tree
 
 - The root of each subtree is connected to the root of the parent tree by an edge.
+
+#### Tree Traversal
+
+There are three commonly used patterns to visit all the nodes in a tree.
+
+1. Preorder
+2. Inorder
+3. Postorder
+
+The difference between these patterns is the order in which each node is visited (a "traversal")
