@@ -315,3 +315,9 @@ root node => left subtree => right subtree
 We recursively do an inorder traversal on the left subtree, visit the root node, and finally do a recursive inorder traversal of the right subtree
 
 left subtree => root node => right node
+
+**Postorder**
+We recursively do an postorder traversal on the left subtree, and the right subtree followed by a
+visit to the root node
+
+left subtree => right node => root node
