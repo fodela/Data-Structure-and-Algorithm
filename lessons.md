@@ -305,3 +305,6 @@ There are three commonly used patterns to visit all the nodes in a tree.
 3. Postorder
 
 The difference between these patterns is the order in which each node is visited (a "traversal")
+
+**Preorder**
+In a preorder traversal, we visit the root node first, then recursively do a preorder traversal of the left subtree, followed by a recursive preorder traversal of the right subtree
