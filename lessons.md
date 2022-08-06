@@ -308,3 +308,10 @@ The difference between these patterns is the order in which each node is visited
 
 **Preorder**
 In a preorder traversal, we visit the root node first, then recursively do a preorder traversal of the left subtree, followed by a recursive preorder traversal of the right subtree
+
+root node => left subtree => right subtree
+
+**Inorder**
+We recursively do an inorder traversal on the left subtree, visit the root node, and finally do a recursive inorder traversal of the right subtree
+
+left subtree => root node => right node
