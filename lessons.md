@@ -321,3 +321,19 @@ We recursively do an postorder traversal on the left subtree, and the right subt
 visit to the root node
 
 left subtree => right node => root node
+
+#### Priority Queues with Binary Heaps
+
+\*_Priority Queue_
+Priority queue acts like a queue in that you dequeue an item by removing it from the front.
+However, in a priority queue , the logical order of items inside a queue is determined by their priority.
+
+The highest priority is at the front of the queue while the lowest is at the back.
+When you enqueue an item on a priority queues, the new item may move all the way to the front depending on its priority.
+
+**Binary Heap**
+Binary Heap is a classic way to implement a priority queue. A binary heap will allow us both enqueue and dequeue items in O(logn).
+Two main variations
+
+1. Min heap => the smallest key is always at the front
+2. Max heap => the largest key value is always at the front
