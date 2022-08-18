@@ -324,7 +324,7 @@ left subtree => right node => root node
 
 #### Priority Queues with Binary Heaps
 
-\*_Priority Queue_
+**Priority Queue**
 Priority queue acts like a queue in that you dequeue an item by removing it from the front.
 However, in a priority queue , the logical order of items inside a queue is determined by their priority.
 
@@ -337,3 +337,13 @@ Two main variations
 
 1. Min heap => the smallest key is always at the front
 2. Max heap => the largest key value is always at the front
+
+#### Binary Search Trees (BST)
+
+**BST property** => Keys that are less than the parent are found in the left subtree whilst those greater than the parent are found in the right subtree
+NB BST property only refers to the direct parent not the entire tree.
+Implementation is similar to linked list implementation
+We need two classes, BinarySearchTree and TreeNode to enable us create and work with a binary search tree that is empty also.
+The BinarySearchTree class has a reference to the TreeNode that is the root of the binary search tree. In most cases the external methods defined in the outer class simply check to see if the tree is empty.
+If there are nodes in the tree, the request is just passed on to a private method defined in the BinarySearchTree class that takes the root as parameter.
+In the case where the tree is empty or we want to delete the key at the root of the tree, wee must take special action.
