@@ -347,3 +347,9 @@ We need two classes, BinarySearchTree and TreeNode to enable us create and work 
 The BinarySearchTree class has a reference to the TreeNode that is the root of the binary search tree. In most cases the external methods defined in the outer class simply check to see if the tree is empty.
 If there are nodes in the tree, the request is just passed on to a private method defined in the BinarySearchTree class that takes the root as parameter.
 In the case where the tree is empty or we want to delete the key at the root of the tree, wee must take special action.
+
+**Deleting nodes of a BST**
+
+1. Search tree for node to be deleted
+   1. If the tree has more than one node \_get method to find the node
+   2. If the tree has a single node then we are removing the root of the tree. But we still check if the key matches that of the root.
