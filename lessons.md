@@ -351,5 +351,32 @@ In the case where the tree is empty or we want to delete the key at the root of 
 **Deleting nodes of a BST**
 
 1. Search tree for node to be deleted
-   1. If the tree has more than one node \_get method to find the node
+   1. If the tree has more than one node use the "\_get" method to find the node
    2. If the tree has a single node then we are removing the root of the tree. But we still check if the key matches that of the root.
+2. Remove the node
+   - 3 possible cases
+     1. Node to be deleted has no children (is a leaf)
+        - remove the node (check whether right or left child and make the parent left or right child none)
+     2. Node to be deleted has both children
+        - Because the node has two children we cannot just promote one child by random but rather
+        1. we search the tree for a node that can replace the node to be deleted (this node is called the successor(xtics of a successor... )) using find_min and find_successor methods.
+           - find_successor method:
+             - because the element on the right are larger than the parent, the successor is the smallest child in the right subtree
+             - else if the node has no right child but is the left_child of its parent then the parent is the successor
+           - find_min method:
+             - the minimum value in a BST is the left most child of the tree (left_child without a a left_child).
+             - ```python
+               def find_min(self):
+                 current = self
+                 while current.has_left_child:
+                   current = current.left_child
+                 return current
+               ```
+
+```
+        - The successor is guaranteed to have no more than one child. We remove the successor splice_out method.
+        - Then we put this successor in place of the node to be deleted.
+        -
+     3. Node to be deleted has only one child (else -> not leaf and not has_both_children)
+        - Find out which child it has and make that child a child of the parent of the node we are removing. If the node to be deleted is not a child, then is a root and because the root has no parent we use replace_node_data method which replaces the data of the root to that of the child (the child is now the root)
+```
