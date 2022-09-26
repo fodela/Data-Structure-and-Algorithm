@@ -313,6 +313,10 @@ In a preorder traversal, we visit the root node first, then recursively do a pre
 
 root node => left subtree => right subtree
 
+Example use:
+
+1. Reading through a book
+
 ```python
 def preorder(tree):
   if tree:
@@ -336,6 +340,14 @@ We recursively do an postorder traversal on the left subtree, and the right subt
 visit to the root node
 
 left subtree => right node => root node
+
+```python
+def postorder(tree):
+  if tree:
+    postorder(tree.get_left_child)
+    postorder(tree.get_right_child)
+    print(tree.get_root.value())
+```
 
 #### Priority Queues with Binary Heaps
 
