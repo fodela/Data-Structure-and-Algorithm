@@ -304,6 +304,8 @@ There are three commonly used patterns to visit all the nodes in a tree.
 2. Inorder
 3. Postorder
 
+They can be implemented as function outside the BinaryTree (better way of doing it because is rarely used) or as methods in the BinaryTree
+
 The difference between these patterns is the order in which each node is visited (a "traversal")
 
 **Preorder**
