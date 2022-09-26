@@ -311,6 +311,19 @@ In a preorder traversal, we visit the root node first, then recursively do a pre
 
 root node => left subtree => right subtree
 
+```python
+def preorder(tree):
+  if tree:
+    # get the root
+    print(tree.get_root_value())
+
+    # recursively get the left children
+    preorder(tree.get_right_child)
+
+    # get the right children
+    preorder(tree.get_left_child)
+```
+
 **Inorder**
 We recursively do an inorder traversal on the left subtree, visit the root node, and finally do a recursive inorder traversal of the right subtree
 
