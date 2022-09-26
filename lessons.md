@@ -335,6 +335,14 @@ We recursively do an inorder traversal on the left subtree, visit the root node,
 
 left subtree => root node => right node
 
+```python
+def inorder(tree):
+  if tree:
+    inorder(tree.get_left_child)
+    print(tree.get_root.val())
+    inorder(tree.get_right_child)
+```
+
 **Postorder**
 We recursively do an postorder traversal on the left subtree, and the right subtree followed by a
 visit to the root node
