@@ -40,10 +40,13 @@ s = ["I", "love", "python"]
 
 for w in s:
 # Python2
-    print w,
+    print w, # I love python
 
 # Python3
     print(w, end=" ")
+    # I love python
 
 # NB: end takes a string which serves as a separator
+    print(w, end="-")
+    # I-love-python
 ```
