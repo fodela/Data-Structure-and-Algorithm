@@ -32,3 +32,18 @@ sentence = 'Hi I am Fodela'
 sentence.startswith('Hi')
 #returns True
 ```
+
+### inline print / print on the same line
+
+```python
+s = ["I", "love", "python"]
+
+for w in s:
+# Python2
+    print w,
+
+# Python3
+    print(w, end=" ")
+
+# NB: end takes a string which serves as a separator
+```
