@@ -87,3 +87,8 @@ We get the ordinal values of the string
 Python has the inbuilt method `ord`
 e.g "cat" => `ord("c")` = 99 `ord("a")`= 97 `ord("t")` = 116 => 312
 312 % 11 = 4
+
+#### Collision Resolution
+
+1. Open addressing
+   1. Looks into the hash table and tries to find another open slot to hold the item that caused the collision
