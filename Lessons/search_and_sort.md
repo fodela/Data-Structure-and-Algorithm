@@ -80,3 +80,10 @@ Our goal is to create a hash function that minimizes the number of collisions, e
       - `44**2` = `1936`
       - extract the middle 2 digits `93`
       - assume table length is 11, `93 % 11 = 5`
+
+#### Hash functions for non-integer elements
+
+We get the ordinal values of the string
+Python has the inbuilt method `ord`
+e.g "cat" => `ord("c")` = 99 `ord("a")`= 97 `ord("t")` = 116 => 312
+312 % 11 = 4
