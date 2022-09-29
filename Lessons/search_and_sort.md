@@ -24,6 +24,8 @@ Searches through until it find the element or an element greater than the elemen
 
 [View implementation](search_and_sort.md)
 
+---
+
 ### Binary Search
 
 NB: Uses **Divide and Conquer**
@@ -32,3 +34,22 @@ We order the list and start searching from the middle. If the value of the middl
 
 **Analysis**
 n/2\*\*i
+
+---
+
+### Hashing
+
+#### Definitions
+
+**Hashing** => building a data structure that can be searched in O(1).
+
+**Hash table** => a collection of item that is stored in such a way as to make it easy to find them later. Can be implemented using list or arrays.
+
+**Slots** => position of the hash table. Each slot is named by an integer value starting from 0
+
+**Hash function** => (maps items to slot) the mapping between an item and the slot where that item belongs in the hash table.
+
+**Perfect hash function** => one that maps each item into a unique slot.
+
+**Hash functions**:
+Our goal is to create a hash function that minimizes the number of collisions, easy to compute and evenly distributes the items in the hash table.
