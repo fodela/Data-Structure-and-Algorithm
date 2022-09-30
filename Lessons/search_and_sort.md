@@ -1,4 +1,6 @@
-## Search and Sort Algorithms
+# Search and Sort Algorithms
+
+## Search Algorithms
 
 ### Sequential Search
 
@@ -57,7 +59,7 @@ Our goal is to create a hash function that minimizes the number of collisions, e
 
 **Rehashing** => the process of looking for another slot after a collision.
 
-**Mapping** => the idea of a dictionary as a hash table to get and retreive items using keys.
+**Mapping** => the idea of a dictionary as a hash table to get and retrieve items using keys.
 
 #### Hash functions for integer elements
 
@@ -109,3 +111,14 @@ Dealing with cases where 2 or more items will have the same slot. e.g 44 and 77 
    - When collisions happen, the item is still placed in the proper slot of the hash table.
      <!-- FIXME: add image-->
      NB: When more and more items hash to the same location, the difficulty of searching for the item in the collection increases.
+
+## Sort Algorithms
+
+### Bubble Sort
+
+The bubble sort loops through a list multiple times and compares adjacent items and exchanges those that are out of order . Each pass through the list places the next largest value in its proper place. In essence, each item "bubbles" up to the location where it belongs.
+e.g
+Sorting `[3,2,1,4]` in ascending gives:
+
+1. 3 is swapped with 2 and 3 is again swapped with 1 => `[2,1,3,4]`
+2. 2 is then swapped with 1 => `[1,2,3,4]`
