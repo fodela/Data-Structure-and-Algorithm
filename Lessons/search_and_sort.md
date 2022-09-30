@@ -54,6 +54,8 @@ n/2\*\*i
 **Hash functions**:
 Our goal is to create a hash function that minimizes the number of collisions, easy to compute and evenly distributes the items in the hash table.
 
+**Rehashing** => the process of looking for another slot after a collision.
+
 #### Hash functions for integer elements
 
 1. Remainder method
@@ -61,7 +63,7 @@ Our goal is to create a hash function that minimizes the number of collisions, e
    - place the item at the mod(table size) -> e.g for a hash table of size 11, the item 54 will be; `54 % 11 = 10` `54` will be placed at slot `10`
    - **load factor** = number of items / table size
    - to search for an item, compute the slot name using the hash function and then check the hash table to see if it is present.
-   - **Collision** => two or more items that may result in the same location.
+   - Collision may occur and we use collision resolution to solve it.
 
 2. Folding methods
    1. Divide the items into equal size pieces (the last piece may not be of equal size)
@@ -90,5 +92,17 @@ e.g "cat" => `ord("c")` = 99 `ord("a")`= 97 `ord("t")` = 116 => 312
 
 #### Collision Resolution
 
+Dealing with cases where 2 or more items will have the same slot. e.g 44 and 77 in a table of length 11 will both be in slot 1.
+
 1. Open addressing
-   1. Looks into the hash table and tries to find another open slot to hold the item that caused the collision
+   -Uses rehashing
+   - Looks into the hash table and tries to find the next open slot or address in the hash table to hold the item that caused the collision.
+   - By systematically visiting each slot one at a time, we are performing an open addressing technique called linear **linear probing**.
+   - Linear probing however cluster the items to the beginning of the hashtable.
+   - Deal with clustering. One way to deal with clustering is to skip slots thereby more evenly distributing the items that have caused collisions.
+   - A variation of the linear probing idea is called **quadratic probing**. Instead of using a constant "skip" value, wee use a rehash function that increments the hash value by 1,3,5,7,9 and so on. Thus if the first hash value is h, the successive values are h+1, h+4, h+9, h+16 and so on.
+2. Chaining
+   - Allows many items to exist at the same location in the hash table.
+   - When collisions happen, the item is still placed in the proper slot of the hash table.
+     <!-- FIXME: add image-->
+     NB: When more and more items hash to the same location, the difficulty of searching for the item in the collection increases.
