@@ -44,6 +44,7 @@ n/2\*\*i
 **Hashing** => building a data structure that can be searched in O(1).
 
 **Hash table** => a collection of item that is stored in such a way as to make it easy to find them later. Can be implemented using list or arrays.
+NB: Python has a built in dictionary that serves as a hash table.
 
 **Slots** => position of the hash table. Each slot is named by an integer value starting from 0
 
@@ -55,6 +56,8 @@ n/2\*\*i
 Our goal is to create a hash function that minimizes the number of collisions, easy to compute and evenly distributes the items in the hash table.
 
 **Rehashing** => the process of looking for another slot after a collision.
+
+**Mapping** => the idea of a dictionary as a hash table to get and retreive items using keys.
 
 #### Hash functions for integer elements
 
