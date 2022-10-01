@@ -1,29 +1,31 @@
-## Python trick to output something on a new line
+## Python Tricks and Hacks
+
+### Output something on a new line
 
 The trick converts all output to strings then put them into a list and then join them into a string that is returned or printed on a new line
 '''
 print('\n'.join(map(str,list(output))))
 '''
 
-## defaultdict from the collections module
+### defaultdict from the collections module
 
 Automatically add a key to the dictionary for you if the key is not already inside the dictionary. Helps avoid keyErrors
 
-## Strings to array
+### Strings to array
 
 ```
 s = 'This is an example sentence'
 s.split()
 ```
 
-## Array or list to string
+### Array or list to string
 
 ```
 l = ['my', 'example', 'sentence']
 ' '.join(l)
 ```
 
-## startswith()
+### startswith()
 
 This method check if a string start with a particular string
 
@@ -49,4 +51,20 @@ for w in s:
 # NB: end takes a string which serves as a separator
     print(w, end="-")
     # I-love-python
+```
+
+### Swap the value of two variable
+
+```python
+a = 1
+b = 2
+
+a,b = b,a
+
+print("a = ", a)
+print("b = ", b)
+# output
+    # a = 2
+    # b = 1
+
 ```
