@@ -129,3 +129,14 @@ Sorting `[3,2,1,4]` in ascending gives:
 
 The selection sort improves on the bubble sort by making only one exchange for every pass through the list. It finds the largest (or smallest if ascending) value as it makes a pass and, after completing the pass, places it in the proper location. As with bubble sort, after the first pass, the largest item is in the correct place. After the second pass, the next largest is in place. This process continues and requires n-1 passes to sort n items, since the final item must be in place after the (n-1)st pass.
 [visualize select sort](https://visualgo.net/en/sorting)
+
+### Insertion sort
+
+The insertion sort always maintains a sorted sub-list in the lower positions of the list.
+Each new item is then "inserted" back into the previous sub-list such that sorted sub-list is one item larger
+We begin by assuming that a list with one item (position 0) is already sorted.
+On each pass, one for each item 1 through to n-1, the current item is checked against those in the already sorted sub-list.
+As we look back into the already sorted sub-list, we shift those items that are greater to the right.
+When we reach a smaller item or the end of the sub-list, the current item can be inserted.
+
+[visualize insertion sort](https://visualgo.net/en/sorting)
