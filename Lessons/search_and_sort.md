@@ -122,3 +122,10 @@ Sorting `[3,2,1,4]` in ascending gives:
 
 1. 3 is swapped with 2 and 3 is again swapped with 1 => `[2,1,3,4]`
 2. 2 is then swapped with 1 => `[1,2,3,4]`
+
+[visualize bubble sort](https://visualgo.net/en/sorting)
+
+### Selection sort
+
+The selection sort improves on the bubble sort by making only one exchange for every pass through the list. It finds the largest (or smallest if ascending) value as it makes a pass and, after completing the pass, places it in the proper location. As with bubble sort, after the first pass, the largest item is in the correct place. After the second pass, the next largest is in place. This process continues and requires n-1 passes to sort n items, since the final item must be in place after the (n-1)st pass.
+[visualize select sort](https://visualgo.net/en/sorting)
