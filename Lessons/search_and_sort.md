@@ -140,3 +140,9 @@ As we look back into the already sorted sub-list, we shift those items that are 
 When we reach a smaller item or the end of the sub-list, the current item can be inserted.
 
 [visualize insertion sort](https://visualgo.net/en/sorting)
+
+### Shell sort
+
+The shell sort improves on the insertion sort by breaking the original list into a number of smaller sub-lists, each of which is sorted using an insertion sort. The unique way that these sub-lists are chosen is the key to shell sort. Instead of breaking the list into sub-lists of contiguous items, the shell sort uses an increment i, sometimes called the gap, to create a sub-list by choosing all items that are i items apart.
+
+[visualize shell sort](https://visualgo.net/en/sorting)
