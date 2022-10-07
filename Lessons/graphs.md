@@ -25,3 +25,7 @@ Edges may be weighted to show that there is a cost to go from one vertex to anot
 A graph can be represented by **G** where **G** = (V,E). For the graph **G**, **V** is a set of vertices and E is a set of edges. Each edge is a tuple (**v,w**) where **v,w** is a subset of **V**. We can add a third component to the edge tuple to represent a weight.
 A subgraph **s** is a set of edges **e** and vertices **v** such that e is an subset of **E** and **v** is a subset of **V**
 []images
+
+#### Path
+
+A path in a graph is a sequence of vertices that are connected by edges. Formally we would define a path as **w1,w2,...,wn** such that (**wi, wi+1**) is a subset of **E** for all 1 <= i <= n-1
