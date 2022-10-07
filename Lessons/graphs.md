@@ -29,3 +29,7 @@ A subgraph **s** is a set of edges **e** and vertices **v** such that e is an su
 #### Path
 
 A path in a graph is a sequence of vertices that are connected by edges. Formally we would define a path as **w1,w2,...,wn** such that (**wi, wi+1**) is a subset of **E** for all 1 <= i <= n-1
+
+#### Cycle
+
+A cycle in a directed graph is a path that starts and ends at the same vertex. A graph with no cycles is called an acyclic graph. A directed graph with no cycles is called a directed acyclic graph or DAG. We
