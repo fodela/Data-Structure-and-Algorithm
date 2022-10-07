@@ -19,3 +19,9 @@ Edges may be one-way or two-way. If the edges in a graph are all one-way, we say
 
 **Weight**
 Edges may be weighted to show that there is a cost to go from one vertex to another. For example in a graph of roads that connect one city to another, the weight on the edge might represent the distance between the two cities.
+
+#### Graph
+
+A graph can be represented by **G** where **G** = (V,E). For the graph **G**, **V** is a set of vertices and E is a set of edges. Each edge is a tuple (**v,w**) where **v,w** is a subset of **V**. We can add a third component to the edge tuple to represent a weight.
+A subgraph **s** is a set of edges **e** and vertices **v** such that e is an subset of **E** and **v** is a subset of **V**
+[]images
