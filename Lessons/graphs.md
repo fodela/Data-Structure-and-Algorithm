@@ -33,3 +33,17 @@ A path in a graph is a sequence of vertices that are connected by edges. Formall
 #### Cycle
 
 A cycle in a directed graph is a path that starts and ends at the same vertex. A graph with no cycles is called an acyclic graph. A directed graph with no cycles is called a directed acyclic graph or DAG. We
+
+### Adjacency Matrix
+
+One of the easiest ways to implement a graph is to use a two-dimensional matrix.
+In this matrix implementation, each of the rows and columns represent a vertex in the graph.
+The value that is stored in the cell at the intersection of row **v** and column **w** indicates if there is an edge from vertex **v** to vertex **w**.
+
+When two vertices are connected by an edge, we say that they are **adjacent**.
+
+The **advantage** is that the adjacency matrix is simple, and for small graphs it is easy to see which nodes are connected to other nodes.
+However, most of the cells in the matrix are empty. Because most of the cells are empty we say that this matrix is "sparse". A matrix is not a very efficient way to store sparse data.
+The adjacency matrix is a good implementation for a graph when the number of edges is large.
+Since there is one row and one column for every vertex in the graph, the number of edges required to fill the matrix is **$|V|^2$**.
+A matrix is full when every vertex is connected to every other vertex.
