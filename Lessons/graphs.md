@@ -47,3 +47,11 @@ However, most of the cells in the matrix are empty. Because most of the cells ar
 The adjacency matrix is a good implementation for a graph when the number of edges is large.
 Since there is one row and one column for every vertex in the graph, the number of edges required to fill the matrix is **$|V|^2$**.
 A matrix is full when every vertex is connected to every other vertex.
+
+### Adjacency List
+
+A more space-efficient way to implement a sparsely connected graph is to use an adjacency list.
+In an adjacency list implementation we keep a master list of all the vertices in the Graph object and then each vertex object in the graph maintains a list of the other vertices that it is connected to.
+In our implementation of the Vertex class we will use a dictionary rather than a list where the dictionary keys are the vertices, and the values are the weights `{vertex : weight}`.
+The advantage of the adjacency list implementation is that it allows us to compactly represent a sparse graph.
+The adjacency list also allows us to easily find all the links that are directly connected to a particular vertex.
