@@ -55,3 +55,20 @@ In an adjacency list implementation we keep a master list of all the vertices in
 In our implementation of the Vertex class we will use a dictionary rather than a list where the dictionary keys are the vertices, and the values are the weights `{vertex : weight}`.
 The advantage of the adjacency list implementation is that it allows us to compactly represent a sparse graph.
 The adjacency list also allows us to easily find all the links that are directly connected to a particular vertex.
+
+### Search
+
+#### Breath First Search (BFS) algorithms
+
+Given a graph **G** and a starting vertex **s**, a breadth first search proceeds by exploring edges in the graph to find all the vertices in **G** for which there is a path from **S**.
+The remarkable thing about a breadth first search is that it finds all the vertices that are a distance **k** from **s** before it finds any vertices that are a distance **k + 1**.
+One good way to visualize what the breadth first search algorithm does is to imagine that it is building a tree, one level of the tree at a time. A breadth first search adds all children of the starting vertex before it begins to discover any of the grandchildren.
+To keep track of its progress, BFS colors each of the vertices white, gray, or black.
+All the vertices are initialized to white when they are constructed.
+
+#000
+
+- A white vertex is an undiscovered vertex.
+- When a vertex is initially discovered it is colored gray, and when BFS has completely explored a vertex it is colored black.
+- This means that once a vertex is colored black, it has no white vertices adjacent to it.
+- A gray node, on the other hand, may have some white vertices adjacent to it, indicating that there are still additional vertices to explore.
