@@ -66,8 +66,6 @@ One good way to visualize what the breadth first search algorithm does is to ima
 To keep track of its progress, BFS colors each of the vertices white, gray, or black.
 All the vertices are initialized to white when they are constructed.
 
-#000
-
 - A white vertex is an undiscovered vertex.
 - When a vertex is initially discovered it is colored gray, and when BFS has completely explored a vertex it is colored black.
 - This means that once a vertex is colored black, it has no white vertices adjacent to it.
@@ -76,5 +74,7 @@ All the vertices are initialized to white when they are constructed.
 - Two other values, the distance and the predecessor, are initialized to 0 and None respectively for the starting vertex. Finally start is placed on Queue. The next step is to begin to systematically explore vertices at the front of the queue.
 - We explore each new node at the front of the queue by iterating over its adjacency list. As each node on the adjacency list is examined it color is checked.
 - It it is white, the vertex is unexplored, and four things happen:
-
-1.
+  1. The new, unexplored vertex **neighbor (nbr)**, is colored gray.
+  2. the predecessor of **nbr**, is set to the current node **current_vert**
+  3. The distance to **nbr** is set to the distance to **current_vert + 1**.
+  4. nbr is added to the end of a queue. Adding **nbr** to the end of the queue effectively schedules this node for further exploration, but not until all the other vertices on the adjacency list of the **current_vert** have been explored.
