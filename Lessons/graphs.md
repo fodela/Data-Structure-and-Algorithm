@@ -71,9 +71,10 @@ All the vertices are initialized to white when they are constructed.
 - This means that once a vertex is colored black, it has no white vertices adjacent to it.
 - A gray node, on the other hand, may have some white vertices adjacent to it, indicating that there are still additional vertices to explore.
 - BFS begins at the starting vertex s and colors start gray to show that it is currently being explored.
-- Two other values, the distance and the predecessor, are initialized to 0 and None respectively for the starting vertex. Finally start is placed on Queue. The next step is to begin to systematically explore vertices at the front of the queue.
+- Two other values, the distance and the predecessor, are initialized to 0 and None respectively for the starting vertex.
+- Finally start is placed on Queue. The next step is to begin to systematically explore vertices at the front of the queue.
 - We explore each new node at the front of the queue by iterating over its adjacency list. As each node on the adjacency list is examined it color is checked.
-- It it is white, the vertex is unexplored, and four things happen:
+- If it is white, the vertex is unexplored, and four things happen:
   1. The new, unexplored vertex **neighbor (nbr)**, is colored gray.
   2. the predecessor of **nbr**, is set to the current node **current_vert**
   3. The distance to **nbr** is set to the distance to **current_vert + 1**.
